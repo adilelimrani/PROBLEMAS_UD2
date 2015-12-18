@@ -1,17 +1,18 @@
-//tabla de multiplicar de cualquier entero
-
-
 #include <iostream>
+
 using namespace std;
 int main() {
 
-	int numero=0,a=0;
+	double numero, factorial=1;
 
-	
-		cout<<"Introduzca el numero que quiere multiplicar: "<<endl;
-		cin >> numero;
-	do {
-		a=a+1;
-		cout << numero << " X " << a << "= " <<numero*a << endl;
-	} while (a<10);
+	cout << "introducir factorial: " << endl;
+	cin >> numero;
+
+	for ( int i = 1 ; i <= numero ; i++) {
+		factorial = factorial*i;
+	}		
+	cout << "el factorial de " << numero << " es " << factorial<< endl;
+
+	return 0;
+
 }
